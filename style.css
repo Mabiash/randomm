@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hindi{
+    position: absolute !important;
+    right: 10px;
+  
+}
+.hindi{
+    z-index: 100 !important;
+}
+.oo{
+    position: absolute;
+    left: 10px;
+}
+
+
+.container {
+  max-width: 800px;
+  min-width: 300px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.subcon {
+  width: 99.5%;
+  height: 99%;
+  background-color:rgba(0, 255, 255, 0.473);
+  z-index: 2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: visible;
+  animation: rotate 3s linear infinite;
+  z-index: 999;
+}
+
+.pe{
+    color: rgb(0, 255, 34);
+    position: absolute;
+    z-index: 4;
+    font-size: 25px;
+}
+
+.subcon h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.imgg{
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.btns{
+    width: 100%;
+    height: 10%;
+    min-width: 420px;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+}
+
+.btns button{
+    height: 3rem;
+    width: 10rem;
+    font-size: 18px;
+    z-index: 100;
+}
+
+@media screen and (max-width: 480px) {
+  .container{
+    width: 90%;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    /* transform:rotate(360deg); */
+  }
+}
